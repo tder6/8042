@@ -16,7 +16,7 @@ function get(key) {
 }
 function init() {
 	for(let i = 0; i < size; i++) for(let j = 0; j < size; j++) 
-		if(i * size + j + 1 <= Math.max(1, log(get("maxunlock")))) tile[i][j] = pow(i * size + j + 1);
+		if(i * size + j + 1 <= Math.max(1, log(get("maxunlock")) + 1)) tile[i][j] = pow(i * size + j + 1);
 		else tile[i][j] = '?';
 	print();
 	show(); console.log("maxscore", get("maxscore"));
