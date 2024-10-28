@@ -1,0 +1,73 @@
+body {  
+	font-family: Arial, sans-serif;  
+	text-align: center;  
+	margin: 50px;  
+	/* padding: 0;   */
+	background-color: #f5f5f5;  
+}  
+#game {  
+	display: inline-block;  
+	/* margin-top: 50px;   */
+}  
+.title {
+	font-size: 48px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #776e5d;
+}
+.score {
+	font-size: 36px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #776e5d;
+}
+.container {  
+	display: grid;  
+	grid-template-columns: repeat(4, 100px);  
+	grid-gap: 10px;  
+	background-color: #bbada0;  
+	padding: 10px;  
+	border-radius: 10px;  
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}  
+.tile {  
+	width: 100px;  
+	height: 100px;  
+	background-color: #cdc1b4;  
+	border-radius: 5px;  
+	display: flex;  
+	justify-content: center;  
+	align-items: center;  
+	font-size: 48px;  
+	font-weight: bold;  
+	box-sizing: border-box;  
+	transition: background-color 0.2s, transform 0.2s;  
+}  
+.tile.tile-0 { background-color: #bbada0;}
+.tile.tile-2 { background-color: #eee4da; }  
+.tile.tile-4 { background-color: #ede0c8; }  
+.tile.tile-8 { background-color: #f2b179; }  
+.tile.tile-16 { background-color: #f59563; }  
+.tile.tile-32 { background-color: #f67c5f; }  
+.tile.tile-64 { background-color: #f65e3b; }  
+.tile.tile-128 { background-color: #edcf72; font-size: 36px; }  
+.tile.tile-256 { background-color: #edcc61; font-size: 36px; }  
+.tile.tile-512 { background-color: #edc850; font-size: 36px; }  
+.tile.tile-1024 { background-color: #edc53f; font-size: 36px; }  
+.tile.tile-2048 { background-color: #edc22e; font-size: 36px; }  
+.tile.tile-4096 { background-color: #3c3a32; font-size: 36px; color: white; }  
+.tile.tile-8192 { background-color: #3c3a32; font-size: 36px; color: white; /* transform: scale(1.05); */ }  
+.restart {  
+	margin-top: 20px;  
+	padding: 10px 20px;  
+	font-size: 16px;  
+	cursor: pointer;  
+	border: none;  
+	border-radius: 5px;  
+	background-color: #8f7a66;  
+	color: white;  
+	transition: background-color 0.2s;  
+}  
+.restart:hover {  
+	background-color: #776e5d;  
+} 
