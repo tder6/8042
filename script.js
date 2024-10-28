@@ -30,7 +30,7 @@ function print() {
 	let html = "";
 	for(let i = 0; i < size; i++) {
 		for(let j = 0; j < size; j++) 
-			if(tile[i][j] == 0) html += "<div class=\"tile tile-0\"></div>";
+			if(tile[i][j] == 0) html += "<div class=\"tile\"></div>";
 			else html += "<div class=\"tile tile-" + String(tile[i][j]) + "\">" + String(tile[i][j]) + "</div>";
 		// html += "<br>";
 	}

@@ -43,7 +43,6 @@ body {
 	box-sizing: border-box;  
 	transition: background-color 0.2s, transform 0.2s;  
 }  
-.tile.tile-0 { background-color: #bbada0;}
 .tile.tile-2 { background-color: #eee4da; }  
 .tile.tile-4 { background-color: #ede0c8; }  
 .tile.tile-8 { background-color: #f2b179; }  
