@@ -61,7 +61,7 @@ function add() {
 	let x = empty[random][0];
 	let y = empty[random][1];
 	update();
-	tile[x][y] = pow((Math.floor(Math.random() * Math.max(log(unlock) - 5, 1))) + 1);
+	tile[x][y] = pow((Math.floor(Math.random() * Math.max(log(unlock) - 6, 1))) + 1);
 	update();
 	print();
 }
