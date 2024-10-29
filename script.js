@@ -16,7 +16,7 @@ function get(key) {
 }
 function init() {
 	for(let i = 0; i < size; i++) for(let j = 0; j < size; j++) 
-		if(i * size + j + 1 <= Math.max(1, log(get("maxunlock")) + 1)) tile[i][j] = pow(i * size + j + 1);
+		if(i * size + j + 1 <= Math.max(1, log(get("maxunlock")))) tile[i][j] = pow(i * size + j + 1);
 		else tile[i][j] = '?';
 	print();
 	show(); console.log("maxscore", get("maxscore"));
@@ -42,7 +42,7 @@ function pow(a) {
 	return r;
 }
 function log(a) {
-	let r = 1;
+	let r = 0;
 	while(a = Math.floor(a / 2)) r++;
 	return r;
 }
@@ -61,7 +61,7 @@ function add() {
 	let x = empty[random][0];
 	let y = empty[random][1];
 	update();
-	tile[x][y] = pow((Math.floor(Math.random() * Math.max(log(unlock) - 6, 1))) + 1);
+	tile[x][y] = pow((Math.floor(Math.random() * Math.max(log(unlock) - 5, 1))) + 1);
 	update();
 	print();
 }
